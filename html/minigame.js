@@ -9,20 +9,21 @@ const soundDenied = new Audio('https://thomaspark.co/projects/among-us-card-swip
 let tarjeta; // Variable para almacenar la tarjeta
 
 // Inicializar el minijuego oculto
-document.body.style.display = "none";
+document.getElementById('minigame-container').style.display = "none";
 
 window.addEventListener('message', function(event) {
     if (event.data.type === "ui") {
         if (event.data.status) {
-            document.body.style.display = "flex";
-            console.log("Minijuego mostrado"); // Depuración
+            document.getElementById('minigame-container').style.display = "flex";
+            document.getElementById('soplete-container').style.display = "none";
+            console.log("Minijuego de swipe mostrado");
         } else {
-            document.body.style.display = "none";
-            console.log("Minijuego oculto"); // Depuración
+            document.getElementById('minigame-container').style.display = "none";
+            console.log("Minijuego de swipe oculto");
         }
     } else if (event.data.type === "setTarjeta") {
         tarjeta = event.data.tarjeta;
-        console.log("Tarjeta establecida: " + tarjeta); // Depuración
+        console.log("Tarjeta establecida: " + tarjeta);
     }
 });
 

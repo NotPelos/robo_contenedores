@@ -1,0 +1,73 @@
+.soplete-container {
+    position: absolute;
+    bottom: 50px; 
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.soplete-container body {
+    margin: 0;
+    padding: 0;
+    font-family: "Anton SC", sans-serif;
+    font-size: 32px;
+    font-weight: bold;    
+    background: transparent;
+    overflow: hidden;
+}
+
+#heatBarContainer {
+    width: 60%;
+    height: 30px;
+    background-color: #eeeeee;
+    border: 2px solid #bfbfbf;
+    border-radius: 5px;
+    overflow: visible;
+    z-index: 500;
+}
+
+#heatBar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(
+        to right,
+        rgb(0, 221, 255) 0%, 
+        rgb(222, 0, 0) 100%  
+    );
+}
+
+#heatLabelStart, #heatLabelEnd{
+    position: absolute;
+    font-weight: bold;
+    font-size: 54px;
+    color: white;
+    overflow-x: hidden;
+}
+
+#heatLabelStart {
+    left: 350px;  /* Ajusta esta distancia segÃºn sea necesario para centrar el nÃºmero */
+    top: -40px;   /* Ajusta la posiciÃ³n vertical */
+    transform: translateY(-50%); /* Centra el texto verticalmente */
+    color: rgb(0, 221, 255);
+}
+
+#heatLabelEnd {
+    right: 330px;  /* Ajusta esta distancia segÃºn sea necesario para centrar el nÃºmero */
+    top: -40px;    /* Ajusta la posiciÃ³n vertical */
+    transform: translateY(-50%); /* Centra el texto verticalmente */
+    color: rgb(222, 0, 0);
+}
+
+#insLabel{
+    position: absolute;
+    font-weight: bold;
+    font-size: 34px;
+    color: white;
+    overflow-x: hidden;
+    right: 920px;  /* Ajusta esta distancia segÃºn sea necesario para centrar el nÃºmero */
+    top: -30px;    /* Ajusta la posiciÃ³n vertical */
+    transform: translateY(-50%); /* Centra el texto verticalmente */
+    color: rgb(255, 255, 255);
+}

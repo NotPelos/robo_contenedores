@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'TuNombre'
+author 'xPelos ft.Abdon'
 description 'Robo a Contenedores con Minijuego de Swipe'
 version '1.0.0'
 
@@ -15,12 +15,14 @@ server_scripts {
     'config.lua'
 }
 
-ui_page 'html/minigame.html'
+ui_page 'html/torpedo.html'
 
 files {
-    'html/minigame.html',
+    'html/torpedo.html',
     'html/minigame.css',
-    'html/minigame.js'
+    'html/minigame.js',
+    'html/soplete.css',
+    'html/soplete.js',
 }
 
 dependencies {
